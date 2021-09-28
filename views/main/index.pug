@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/navbar.css")
+        link(rel="stylesheet", href="/css/login.css")
+        if (lang == 'pl')
+            title Strona Główa - emotka.eu 
+        else if (lang == 'en')
+            title Home Page - emotka.eu
+
+    body 
+        if logined == true 
+            if lang == 'pl'
+                div.login
+                    span  Siemka #{username}
+                    .numbers 
+                        span #{lang}: #{langJoins}
+                        span all: #{all}
+            else if lang == 'en'
+                div.login
+                    span Hello #{username}
+                    .numbers
+                        span #{lang}: #{langJoins}
+                        span all: #{all}
+        if lang == 'pl'
+            include ../pl-top.pug
+            a(href="/en")
+                button.but(type="submit" style="border: 0; background: transparent")
+                    img( src="/img/usa.png" width="48" height="30" alt="submit")
+        else if lang == 'en'
+            include ../en-top.pug
+            a(href="/pl")
+                button.but(type="submit" style="border: 0; background: transparent")
+                    img( src="/img/polish.png" width="48" height="30" alt="submit")

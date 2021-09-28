@@ -1,0 +1,13 @@
+table{border-collapse: collapse;
+width: 100%;}
+table, td, th {
+    border: 1px solid black;
+    min-width: 10%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+      margin: 0;
+      padding: 0;
+  }

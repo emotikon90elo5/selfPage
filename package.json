@@ -1,0 +1,20 @@
+{
+    "name": "www",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm i && node index.js"
+    },
+    "author": "emotikonowy",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cookie-parser": "^1.4.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.2",
+        "mongoose": "^6.0.4",
+        "pug": "^3.0.2"
+    }
+}

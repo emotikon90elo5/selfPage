@@ -1,0 +1,12 @@
+.login{
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.numbers {
+    float: right;
+    margin-right: 10px;
+}
+.numbers span{
+    margin-left: 5px;
+    margin-right: 5px;
+}

@@ -1,0 +1,20 @@
+.bg-text {
+    background-color: #aaa;
+    overflow: hidden;
+    padding: 20px 20px 100px 20px;
+    position: relative;
+    width: 400px;
+}
+.bg-text::after {
+    color: #fff;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 80px;
+    line-height: 1;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+}
+* {
+    box-sizing: border-box;
+}

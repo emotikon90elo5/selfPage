@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+.title{
+    text-decoration: none
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.but{
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    margin: 10px;
+}
+nav{
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    height: 150px;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5%;
+    margin: 0;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+#title1{
+    color: #40cc40;
+    font-size: 40px;
+}
+#title2{
+    color: #bbeebb;
+    font-size: 20px;
+}
+.left{
+    width: 50%;
+    float: left;
+    height: 150px;
+}
+.right{
+    width: 50%;
+    float: left;
+    height: 150px;
+}
+
+
+
+
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.tutorial {
+  width: 80%;
+  margin: 5% auto 0 auto;
+  background-color: rgb(31, 31, 31);
+  max-width: 800px;
+}
+.tutorial .slider {
+  width: 100%;
+  height: 300px;
+  background-color: #F03861;
+}
+.tutorial .information {
+  width: 100%;
+  padding: 20px 50px;
+  margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+.tutorial .information h1 {
+  color: #333;
+  font-size: 1.5rem;
+  padding: 0px 10px;
+  border-left: 3px solid #F03861;
+}
+.tutorial .information h3 {
+  color: #e0e0e0;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0px 10px;
+  border-left: 3px solid #F03861;
+}
+.tutorial .information p {
+  padding: 10px 0px;
+}
+.tutorial ul {
+  font-size: 0;
+  list-style-type: none;
+}
+.tutorial ul li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(206, 206, 206);
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+  width: 100px;
+}
+.tutorial ul li ul {
+  display: none;
+}
+.tutorial ul li:hover {
+  cursor: pointer;
+  background-color: rgb(35, 35, 35);
+  
+}
+.tutorial ul li:hover ul {
+  display: block;
+  margin-top: 15px;
+  width: 125px;
+  left: 0;
+  position: absolute;
+}
+.tutorial ul li:hover ul li {
+  display: block;
+  background-color: rgb(45, 45, 45);
+}
+.tutorial ul li:hover ul li span {
+  float: right;
+  color: #f9f9f9;
+  background-color: #F03861;
+  padding: 2px 5px;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 3px;
+}
+.tutorial ul li:hover ul li:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+.tutorial ul li:hover ul li:hover span {
+  background-color: #ee204e;
+}
+a{
+    text-decoration: none;
+}
