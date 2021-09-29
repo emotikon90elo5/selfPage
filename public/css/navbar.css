@@ -54,6 +54,8 @@ body{
 *:before,
 *:after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -159,9 +161,6 @@ a{
   #title1 {
     font-size: 30px;
   }
-  .tutorial ul li {
-    font-size: 0.85rem;
-  }
   nav{
     height: 125px;
   }
@@ -172,13 +171,10 @@ a{
     margin-top: 2vh;
   }
   #title2 {
-    font-size: 10px;
+    font-size: 15px;
   }
   #title1 {
     font-size: 25px;
-  }
-  .tutorial ul li {
-    font-size: 0.75rem;
   }
   nav{
     height: 100px;
@@ -190,12 +186,12 @@ a{
     margin-top: 2vh;
   }
   #title2 {
-    font-size: 7px;
+    font-size: 12px;
   }
   #title1 {
     font-size: 20px;
   }
-  .tutorial ul li {
-    font-size: 0.65rem;
+  .tutorial .information h3 {
+    font-size: 12px;
   }
 }
