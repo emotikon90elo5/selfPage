@@ -45,14 +45,14 @@ nav{
 }
 
 
-
+body{
+  background-color: rgb(85, 85, 85);
+}
 
 
 *,
 *:before,
 *:after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -145,4 +145,57 @@ nav{
 }
 a{
     text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .left {
+    margin-top: 2vh;
+  }
+  #title2 {
+    font-size: 15px;
+  }
+  #title1 {
+    font-size: 30px;
+  }
+  .tutorial ul li {
+    font-size: 0.85rem;
+  }
+  nav{
+    height: 125px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left {
+    margin-top: 2vh;
+  }
+  #title2 {
+    font-size: 10px;
+  }
+  #title1 {
+    font-size: 25px;
+  }
+  .tutorial ul li {
+    font-size: 0.75rem;
+  }
+  nav{
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .left {
+    margin-top: 2vh;
+  }
+  #title2 {
+    font-size: 7px;
+  }
+  #title1 {
+    font-size: 20px;
+  }
+  .tutorial ul li {
+    font-size: 0.65rem;
+  }
 }

@@ -4,7 +4,6 @@ const router = express.Router()
 const { mongodbIP } = process.env
 
 router.get('/:lang/projects/funshop/', async (req, res) => {
-    const start = new Date()
     if (req.params.lang != 'pl' && req.params.lang != 'en') {
         return res.status(404).render('err')
     }
@@ -51,8 +50,6 @@ router.get('/:lang/projects/funshop/', async (req, res) => {
                 Object.assign(input, { langJoins: result[0].joins })
             })
     })
-    const end = new Date()
-    console.log(end - start)
     res.render('funshop/funshop', input)
 })
 module.exports = router
