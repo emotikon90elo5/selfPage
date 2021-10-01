@@ -1,15 +1,16 @@
 require('dotenv').config()
+const { readdirSync } = require('fs')
 
 const app = require('./settings')
-const panel = require('./router/panel')
-const funshop = require('./router/projects/funshop')
-const main = require('./router/main')
-const pl = require('./router/projects/pl')
 
-app.use(main)
-app.use(panel)
-app.use(funshop)
-app.use(pl)
+for (const dir of readdirSync('./router/')) {
+    const commands = readdirSync(`./router/${dir}/`).filter((file) =>
+        file.endsWith('.js'),
+    )
+    for (const commandFile of commands) {
+        app.use(require(`./router/${dir}/${commandFile}`))
+    }
+}
 
 app.all('*', (req, res) => {
     res.status(404).render('err')

@@ -88,7 +88,7 @@ body{
 }
 .tutorial .information h3 {
   color: #e0e0e0;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 300;
   padding: 0px 10px;
   border-left: 3px solid #F03861;
@@ -97,18 +97,18 @@ body{
   padding: 10px 0px;
 }
 .tutorial ul {
-  font-size: 0;
   list-style-type: none;
 }
 .tutorial ul li {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 400;
   color: rgb(206, 206, 206);
   display: inline-block;
   padding: 15px;
   position: relative;
-  width: 100px;
+  width: 120px;
+  text-align: center;
 }
 .tutorial ul li ul {
   display: none;
@@ -164,6 +164,10 @@ a{
   nav{
     height: 125px;
   }
+  .tutorial ul li{
+    font-size: 18px;
+    width: 100px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -179,9 +183,13 @@ a{
   nav{
     height: 100px;
   }
+  .tutorial ul li{
+    font-size: 16px;
+    width: 90px;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .left {
     margin-top: 2vh;
   }
@@ -191,7 +199,38 @@ a{
   #title1 {
     font-size: 20px;
   }
-  .tutorial .information h3 {
+  .tutorial ul li{
+    font-size: 14px;
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .left {
+    margin-top: 2vh;
+  }
+  #title2 {
     font-size: 12px;
+  }
+  #title1 {
+    font-size: 15px;
+  }
+  .tutorial ul li{
+    font-size: 12px;
+    width: 80px;
+  }
+  .left{
+    width: 100vw;
+    height: 150px;
+  }
+  .right{
+      width: 100%;
+      height: 150px;
+      top: 100px;
+      transform: translateY(-100px);
+
+  }
+  nav{
+    height: 150px;
   }
 }
