@@ -48,7 +48,6 @@ router.get('/:lang/', async (req, res) => {
             })
     })
     await delay(150)
-    console.log(input)
     res.render('main/index', input)
 })
 

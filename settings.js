@@ -3,7 +3,7 @@ const path = require('path')
 const session = require('express-session')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
-const port = process.env.PORT || 25565
+const port = process.env.PORT || 3000
 const app = express()
 
 app.set('views', __dirname + `/views`)

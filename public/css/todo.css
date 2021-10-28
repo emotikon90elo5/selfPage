@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+}
+.task:focus {
+    outline: none;
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+}
+.task {
+    border:none;
+    outline: none;
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    margin-top: 50px;
+}
+.task::placeholder{
+    color: rgb(216, 216, 216);
+}
+.add{
+    border:none;
+    outline: none;
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+    padding: 10px;
+    background-color: rgb(104, 104, 104);
+    color: white;
+    margin-top: 50px;
+}
+.add:hover{
+    background-color: rgb(46, 46, 46);
+}
