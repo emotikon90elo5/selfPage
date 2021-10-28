@@ -18,7 +18,7 @@ router.get('/:lang/projects/todo/', async (req, res) => {
             await taskslist.push(task.task)
         })
     })
-    await delay(100)
+    await delay(2000)
     console.log(taskslist)
     const input = { lang: req.params.lang, list: taskslist }
     await res.render('todo/main', input)
