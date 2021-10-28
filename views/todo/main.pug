@@ -12,15 +12,15 @@ else if lang == 'en'
     a(href="/pl/projects/todo")
         button.but(type="submit" style="border: 0; background: transparent")
             img( src="/img/polish.png" width="48" height="30" alt="submit")
-
-if lang == 'pl'
-    form(action="/pl/projects/todo/add", method="post")
-        input(type="text", placeholder="Zadanie", class="task",name="task", id="task")
-        input(type="submit", value="DODAJ", class="add")
-else if lang == 'en'
-    form(action="/en/projects/todo/add", method="post")
-        input(type="text", placeholder="Task", class="task",name="task", id="task")
-        input(type="submit", value="ADD", class="add")
-ol
-    each val in list
-        li= val
+.tasks
+    if lang == 'pl'
+        form(action="/pl/projects/todo/add", method="post")
+            input(type="text", placeholder="Zadanie", class="task",name="task", id="task")
+            input(type="submit", value="DODAJ", class="add")
+    else if lang == 'en'
+        form(action="/en/projects/todo/add", method="post")
+            input(type="text", placeholder="Task", class="task",name="task", id="task")
+            input(type="submit", value="ADD", class="add")
+    ol
+        each val in list
+            li= val
