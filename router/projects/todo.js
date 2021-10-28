@@ -16,9 +16,9 @@ router.get('/:lang/projects/todo/', async (req, res) => {
     await todo.find({}).exec(async (err, tasks) => {
         await tasks.forEach(async (task) => {
             await taskslist.push(task.task)
-            await console.log('t')
         })
     })
+    await delay(100)
     console.log(taskslist)
     const input = { lang: req.params.lang, list: taskslist }
     await res.render('todo/main', input)
