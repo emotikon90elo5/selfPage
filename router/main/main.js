@@ -22,11 +22,7 @@ router.get('/:lang/', async (req, res) => {
         )
         await joins.findOneAndUpdate(
             { link: '/:lang/' },
-            {
-                $inc: {
-                    joins: 1,
-                },
-            },
+            { $inc: { joins: 1 } },
             { new: true },
         )
     })
