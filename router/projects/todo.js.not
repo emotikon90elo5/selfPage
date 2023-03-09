@@ -3,8 +3,8 @@ const mongoose = require('mongoose')
 const router = express.Router()
 const { mongodbIP } = process.env
 const { Schema } = mongoose
-const todos = require('./../../Shemas/todo')
-const { delay } = require('./../../functions/delay')
+const todos = require('../../Shemas/todo')
+const { delay } = require('../../functions/delay')
 
 router.get('/:lang/projects/todo/', async (req, res) => {
     let taskslist = []
